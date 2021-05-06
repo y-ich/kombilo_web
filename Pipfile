@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+bottle = {git = "https://github.com/bottlepy/bottle.git"}
+paste = "==2.0.3"
+kombilo = {git = "https://github.com/ugoertz/kombilo"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
