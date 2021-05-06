@@ -10,6 +10,10 @@ TIMEOUT = 29
 search_lock = Lock()
 search_process = None
 
+@hook('after_request')
+def enable_cors():
+    response.set_header('Access-Control-Allow-Origin', '*')
+
 @post('/search.json')
 def search():
     global search_process
