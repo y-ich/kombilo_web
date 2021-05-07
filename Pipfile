@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 bottle = {git = "https://github.com/bottlepy/bottle.git"}
-paste = "==2.0.3"
+paste = "~=3.5.0"
 kombilo = {git = "https://github.com/ugoertz/kombilo"}
 
 [dev-packages]
